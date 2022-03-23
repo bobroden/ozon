@@ -30,8 +30,8 @@ module.exports = {
 	module: {
 		rules: [
             {
-				test: /\.(jpe?g|png|gif|svg)$/i,
-			 	use: ["file-loader?name=img/[name].[ext]"]
+				test: /\.(jpe?g|png|gif|ico)$/i,
+			 	use: ["file-loader?name=images/[name].[ext]"]
 			},
             {
                 test: /\.svg$/,
