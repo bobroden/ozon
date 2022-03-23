@@ -1,4 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg">
-    <circle class="progress__svg-background" r="80" cx="100" cy="100"></circle>
-    <circle class="progress__svg-fill" r="80" cx="100" cy="100"></circle>
-</svg>
