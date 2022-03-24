@@ -22,14 +22,14 @@ export class Progress {
             this.setMod('normal', event.target.value);
         })
 
-        this.animateCheckbox.addEventListener('click', () => {
+        document.querySelector('.progress__controllers-animate').addEventListener('click', () => {
             if(this.isAnimated)
                 this.setMod('animated', false);
             else
                 this.setMod('animated', true);
         })
 
-        this.hideCheckbox.addEventListener('click', () => {
+        document.querySelector('.progress__controllers-hide').addEventListener('click', () => {
             if(this.isHidden)
                 this.setMod('hidden', false);
             else
