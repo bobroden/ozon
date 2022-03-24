@@ -1,14 +1,16 @@
 export class Progress {
-    constructor() {
-        this.spinner = document.querySelector('.progress__spinner');
-        this.inputOfValue = document.querySelector('.progress__input');
-        this.animateCheckbox = document.querySelector('.progress__checkbox-animate');
-        this.hideCheckbox = document.querySelector('.progress__checkbox-hide');
+    spinner = document.querySelector('.progress__spinner');
+    inputOfValue = document.querySelector('.progress__input');
+    animateCheckbox = document.querySelector('.progress__checkbox-animate');
+    hideCheckbox = document.querySelector('.progress__checkbox-hide');
 
+    fillCircle = document.querySelector('.progress__svg-fill');
+    
+    constructor() {
         this.value = (+localStorage.getItem('value')) ? +localStorage.getItem('value') : 25;
         this.isAnimated = (localStorage.getItem('isAnimated') === 'false') ? false : true;
         this.isHidden = (localStorage.getItem('isHidden') === 'true') ? true : false;
-        this.fillCircle = document.querySelector('.progress__svg-fill');
+
         let radius = this.fillCircle.r.animVal.value;
         this.circleLength = Math.PI * radius * 2;
 
